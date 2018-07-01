@@ -1,10 +1,10 @@
 let path = require('path');
 
 let conf = {
-    entry: ['./src/app.js'],
+    entry: ['babel-polyfill', './src/app.js'],
     output: {
         path: path.resolve(__dirname, "./dist"),
-        filename: "main.js",
+        filename: "app.js",
         publicPath: "dist/"
     },
     devServer: {
